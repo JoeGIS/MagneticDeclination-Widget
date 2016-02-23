@@ -10,12 +10,11 @@ Press spacebar to pause/resume updating.
 
 [View it live](http://joerogan.ca/maps/joegis/)
 
-## Resources
+## Helpful Links
 * [Magnetic Declination](http://geomag.nrcan.gc.ca/mag_fld/magdec-en.php)
 * [World Magnetic Model](https://www.ngdc.noaa.gov/geomag/WMM/)
 
-## Helpful Links
-
+## Quickstart
 ```javascript
 on(mainMap, "load", function() {
     var magDec = new MagDec({
