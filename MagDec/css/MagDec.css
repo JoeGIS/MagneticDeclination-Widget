@@ -1,0 +1,24 @@
+.magDecWidget .valuesDiv {
+    font-weight: normal;
+}
+
+.magDecWidget .attribute {
+    display: inline-block;
+    width: 130px;
+    height: 15px;
+    font-weight: bold;
+}
+
+.magDecWidget .value {
+    font-weight: normal;
+}
+
+.magDecWidget .warning {
+    color: red;
+    font-weight: bold;
+}
+.magDecWidget .smallText {
+    color: black;
+    font-weight: normal;
+    font-size: 7px;
+}
