@@ -1,3 +1,9 @@
+
+.magDecWidget {
+    white-space: nowrap;
+    min-width: 300px;
+}
+
 .magDecWidget .valuesDiv {
     font-weight: normal;
 }
