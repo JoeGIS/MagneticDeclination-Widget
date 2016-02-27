@@ -2,7 +2,7 @@
 ///////////////////////////////--------MagDec.js-------//////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////
 // 
-// Version: 1.1
+// Version: 1.2
 // Author: Joseph Rogan (joseph.rogan@forces.gc.ca canadajebus@gmail.com)
 // 
 // Credits: Modified from code create by Christopher Weiss (cmweiss@gmail.com) Copyright 2012
@@ -22,6 +22,8 @@
 //    });
 //
 // Changes:
+// Version 1.2
+//  -Minor tweak to size and warning text format.
 // Version 1.1
 //  -Added .magDecWidget { white-space: nowrap; min-width: 300px; } to css file
 /////////////////////////////////////////////////////////////////////////////////////
@@ -188,11 +190,11 @@ define([
             // Warning message if required
             if (myGeoMag.bh < 5000 & myGeoMag.bh > 1000)
             {
-                this.Warning.innerHTML = "Warning: The horizontal field strength at this<br/>location is only " + Math.round(myGeoMag.bh) + " nT (Compass readings have<br/>large uncertainties in areas where H is smaller<br/>than 5000 nT)"
+                this.Warning.innerHTML = "Warning: The horizontal field strength at this<br/>location is only " + Math.round(myGeoMag.bh) + " nT (Compass readings<br/>have large uncertainties in areas where H is<br/>smaller than 5000 nT)"
             }
             else if (myGeoMag.bh < 1000)
             {
-                this.Warning.innerHTML = "Warning: The horizontal field strength at this<br/>location is only " + Math.round(myGeoMag.bh) + " nT (Compass readings have<br/>VERY LARGE uncertainties in areas where H is<br/>smaller than 1000 nT)"
+                this.Warning.innerHTML = "Warning: The horizontal field strength at this<br/>location is only " + Math.round(myGeoMag.bh) + " nT (Compass readings<br/>have VERY LARGE uncertainties in areas where<br/>H is smaller than 1000 nT)"
             }
             else
             {
